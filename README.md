@@ -8,3 +8,8 @@ Documentazione: https://ygoprodeck.com/api-guide/
 
 **Bonus:**
 Creare un componente che mostri il numero totale di risultati ottenuti.
+
+
+### **Steps**:
+1) Installo Axios, Scss, Bootstrap e il Font;
+2) Creo i componenti: 'Header' e 'Main';
