@@ -13,3 +13,5 @@ Creare un componente che mostri il numero totale di risultati ottenuti.
 ### **Steps**:
 1) Installo Axios, Scss, Bootstrap e il Font;
 2) Creo i componenti: 'Header' e 'Main';
+3) Creo un file store per inserire i dati che mi serviranno e lo importo in tutti i miei componenti;
+

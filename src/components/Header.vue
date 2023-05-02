@@ -1,15 +1,28 @@
 <script>
+import {store} from '../data/store';
+
   export default {
-    name:'Header'
+    name:'Header',
+    data(){
+      return{
+        store
+      }
+    }
   }
   
 </script>
 
 <template>
-  <h1>HEADER</h1>
+  <header>
+    <!-- <img src="" alt="logo"> -->
+    <h2>logo</h2>
+    <h1>{{store.HeaderTitle}}</h1>
+  </header>
 </template>
 
 
-<style>
-
+<style lang="scss" scoped>
+  header{
+    display: flex;
+  }
 </style>
