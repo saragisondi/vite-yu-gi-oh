@@ -1,14 +1,26 @@
 <script>
-  
+import YuGiOhCard from './Yu-Gi-Oh-Card.vue'
+
 export default {
   name:'Main',
+  components:
+  YuGiOhCard,
 }
 </script>
 
 <template>
   <main>
-    b
-    <div class="sg-container">a</div>
+    <div class="container">
+
+      <div class="found-cards">
+        <div class="text">Found 39 cards</div>
+      </div>
+
+      <div class="container-cards">
+        <YuGiOhCard />
+      </div>
+    </div>
+
   </main>
 </template>
 
@@ -16,16 +28,34 @@ export default {
   @use './scss/general.scss' as *;
   @use './scss/colors.scss' as *;
 
-  // main{
-  //   // background-color:$primary-color;
-  //   // width: 100%;
-  //   // min-height:100vh;
-  // }
-  
-      // .sg-container{
-      //   background-color:$secondary-color;
-      //   max-width: 1200px;
-      //   width: 90%;
+main{
+  background-color: $secondary-color;
+  margin:80px;
 
-      // }
+  .container{
+    background: rgb(33,37,41);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 85%, rgba(33,37,41,1) 30%);
+    margin:70px;
+    height: 500px;
+    border: 1px solid red;
+  }
+
+  .found-cards{
+    // background-color:$tertiary-color;
+    height:80px;
+    display: flex;
+    align-items: center;
+    
+    .text{
+      font-size:20px;
+      font-weight: bold;
+      margin-left:30px;
+      color:$secondary-color;
+    }
+  }
+
+  .container-cards{
+    height:200px;
+  }
+}
 </style>
