@@ -24,6 +24,8 @@ import {store} from './data/store';
 </template>
 
 
-<style>
+<style  lang="scss" >
+@use './components/scss/typography.scss' as *;
+@use './components/scss/general.scss' as *;
 
 </style>
