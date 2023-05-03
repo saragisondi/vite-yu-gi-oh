@@ -16,7 +16,14 @@ export default {
 </script>
 
 <template>
+
+  <select name="type" id="type">
+    <option value="Alien">Alien</option>
+  </select>
+
   <main>
+
+
     <div class="container">
 
       <div class="found-cards">
@@ -35,13 +42,23 @@ export default {
   @use './scss/general.scss' as *;
   @use './scss/colors.scss' as *;
 
+  select{
+    margin:20px 90px;
+    background-color: $secondary-color;
+    border-style:none;
+    border:1px solid #CAC2B5;
+    border-radius:5px;
+    padding: 5px;
+    padding-right:60px;
+  }
+
 main{
   background-color: $secondary-color;
-  margin:80px;
+  margin:0 80px;
 
   .container{
     background: $secondary-color;
-    margin:70px;
+    margin:0 70px;
   
   }
 

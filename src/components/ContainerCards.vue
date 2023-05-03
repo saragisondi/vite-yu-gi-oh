@@ -24,7 +24,6 @@ export default {
     :img="card.card_images[0].image_url"
     :name="card.name"
     :type="card.type"
-    
     />
 
   </div>
