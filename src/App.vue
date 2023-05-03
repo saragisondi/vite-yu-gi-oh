@@ -1,7 +1,7 @@
 <script>
 import Header from './components/Header.vue';
 import Main from './components/Main.vue';
-
+import ContainerCards from './components/ContainerCards.vue'
 import "@fontsource/montserrat";
 import {store} from './data/store';
 
@@ -15,6 +15,7 @@ import {store} from './data/store';
     components:{
       Header,
       Main,
+      ContainerCards
     }
   }
 </script>

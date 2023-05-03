@@ -1,10 +1,12 @@
 <script>
 import ContainerCards from '../components/ContainerCards.vue'
+import Card from '../components/Card.vue'
 
 export default {
   name:'Main',
   components:{
     ContainerCards,
+    Card,
   }
 }
 </script>
@@ -18,7 +20,7 @@ export default {
       </div>
       
       <ContainerCards/>
-      
+
     </div>
 
   </main>
