@@ -1,12 +1,16 @@
 <script>
 import ContainerCards from '../components/ContainerCards.vue'
 import Card from '../components/Card.vue'
+import {store} from '../data/store'
 
 export default {
   name:'Main',
   components:{
     ContainerCards,
     Card,
+  },
+  data(){
+    store
   }
 }
 </script>

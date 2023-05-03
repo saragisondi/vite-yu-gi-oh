@@ -17,5 +17,6 @@ Creare un componente che mostri il numero totale di risultati ottenuti.
 4) Creo un componente per il container per le cards;
 5) Creo un altro componente: cards;
 6) Creo un array vuoto in store.js;
+7) Importo axios per fare la chiamata Api;
 
 

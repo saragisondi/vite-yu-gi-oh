@@ -5,7 +5,7 @@ export default {
   props:{
     img:String,
     name:String,
-    fname:String
+    type:String
   }
 }
 </script>
@@ -18,8 +18,8 @@ export default {
       </div>
 
       <div class="description">
-        <div>{{name}}</div>
-        <p>{{fname}}</p>
+        <h3>{{name}}</h3>
+        <p>{{type}}</p>
       </div>
 
     </div>
@@ -27,26 +27,29 @@ export default {
 
 <style lang="scss" scoped>
 @use './scss/colors.scss'as *;
+
 .card{
-      border:1px solid red;
       width: calc(90% /5);
       height:500px;   
       margin-bottom:30px;
-
-      .container-img{
-        width: 100%;
-        height:65%;
-
-        img{
-          width: 100%;
-          height:65%;
-          object-fit: cover;
-        }
-      }
-
+      background-color: $primary-color;
+      
+      
       .description{
-        background-color: $primary-color;
         height:35%;
+        word-wrap: wrap;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+
+        h3{
+          text-transform: uppercase;
+          color:$secondary-color;
+          margin-bottom:20px;
+        }
       }
     }
 </style>

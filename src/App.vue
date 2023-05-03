@@ -1,4 +1,5 @@
 <script>
+import axios from 'axios'
 import Header from './components/Header.vue';
 import Main from './components/Main.vue';
 import ContainerCards from './components/ContainerCards.vue'
@@ -16,6 +17,23 @@ import {store} from './data/store';
       Header,
       Main,
       ContainerCards
+    },
+    methods:{
+      getApi(){
+        axios.get(store.ApiUrl,{
+          params:{
+            num:10,
+            offset:0
+          }
+        })
+        .then(result => {
+          store.cards = result.data.data;
+        })
+      }
+    },
+
+    mounted(){
+      this.getApi()
     }
   }
 </script>
