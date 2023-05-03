@@ -29,11 +29,13 @@ import {store} from '../data/store';
 
 
 <style lang="scss" scoped>
+  @use './scss/colors.scss' as *;
+  
   header{
     display: flex;
     align-items: center;
     height:73px;
-
+    background-color: $secondary-color;
 
     .container-img{
       width: 10%;

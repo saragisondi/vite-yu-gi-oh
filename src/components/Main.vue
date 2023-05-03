@@ -1,9 +1,11 @@
 <script>
-
+import ContainerCards from '../components/ContainerCards.vue'
 
 export default {
   name:'Main',
-
+  components:{
+    ContainerCards,
+  }
 }
 </script>
 
@@ -14,13 +16,13 @@ export default {
       <div class="found-cards">
         <div class="text">Found 39 cards</div>
       </div>
-
-      <div class="container-cards">
-
-      </div>
+      
+      <ContainerCards/>
+      
     </div>
 
   </main>
+
 </template>
 
 <style lang="scss" scoped >
@@ -32,14 +34,13 @@ main{
   margin:80px;
 
   .container{
-    background: rgb(33,37,41);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 85%, rgba(33,37,41,1) 30%);
+    background: $secondary-color;
     margin:70px;
-    height: 500px;
+  
   }
 
   .found-cards{
-    // background-color:$tertiary-color;
+    background-color:$tertiary-color;
     height:80px;
     display: flex;
     align-items: center;
@@ -52,8 +53,5 @@ main{
     }
   }
 
-  .container-cards{
-    height:200px;
-  }
 }
 </style>
