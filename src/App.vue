@@ -1,7 +1,7 @@
 <script>
 import Header from './components/Header.vue';
 import Main from './components/Main.vue';
-import YuGiOhCardVue from './components/Yu-Gi-Oh-Card.vue'
+// import YuGiOhCardVue from './components/Yu-Gi-Oh-Card.vue'
 import "@fontsource/montserrat";
 import {store} from './data/store';
 
@@ -15,7 +15,7 @@ import {store} from './data/store';
     components:{
       Header,
       Main,
-      YuGiOhCardVue
+      // YuGiOhCardVue
     }
   }
 </script>

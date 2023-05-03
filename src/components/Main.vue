@@ -1,10 +1,9 @@
 <script>
-import YuGiOhCard from './Yu-Gi-Oh-Card.vue'
+
 
 export default {
   name:'Main',
-  components:
-  YuGiOhCard,
+
 }
 </script>
 
@@ -17,7 +16,7 @@ export default {
       </div>
 
       <div class="container-cards">
-        <YuGiOhCard />
+
       </div>
     </div>
 
@@ -37,7 +36,6 @@ main{
     background: linear-gradient(0deg, rgba(255,255,255,1) 85%, rgba(33,37,41,1) 30%);
     margin:70px;
     height: 500px;
-    border: 1px solid red;
   }
 
   .found-cards{
