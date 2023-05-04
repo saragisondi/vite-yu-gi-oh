@@ -31,7 +31,16 @@ import {store} from './data/store';
           store.cards = result.data.data;
         })
       },
-      
+      counterFindCard(){
+        axios.get(store.ApiUrl,{
+          params:{
+            type:store.CardType
+          }
+        })
+        .then(result => {
+          store.numberCard = result.data
+        })
+      }
     },
 
     mounted(){
