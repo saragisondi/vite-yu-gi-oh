@@ -18,5 +18,8 @@ Creare un componente che mostri il numero totale di risultati ottenuti.
 5) Creo un altro componente: cards;
 6) Creo un array vuoto in store.js;
 7) Importo axios per fare la chiamata Api;
-
+8) Faccio la chiamata Api per stampare le cards;
+9) Creo un componente Select;
+10) Aggiungo un array con i tipi delle cards;
+11)
 

@@ -1,6 +1,7 @@
 <script>
 import ContainerCards from '../components/ContainerCards.vue'
 import Card from '../components/Card.vue'
+import Select from '../components/Select.vue'
 import {store} from '../data/store'
 
 export default {
@@ -8,9 +9,12 @@ export default {
   components:{
     ContainerCards,
     Card,
+    Select,
   },
   data(){
-    store
+    return{
+      store,
+    }
   }
 }
 </script>
@@ -25,7 +29,8 @@ export default {
       <div class="found-cards">
         <div class="text">Found 39 cards</div>
       </div>
-      
+
+      <Select/>
       <ContainerCards/>
 
     </div>

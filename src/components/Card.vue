@@ -37,7 +37,6 @@ export default {
       
       .description{
         height:35%;
-        word-wrap: wrap;
         text-align: center;
         display: flex;
         justify-content: center;
