@@ -29,16 +29,17 @@ import {store} from './data/store';
         })
         .then(result => {
           store.cards = result.data.data;
+          this.counterFindCard()
         })
       },
       counterFindCard(){
         axios.get(store.ApiUrl,{
           params:{
-            type:store.CardType
+            type:store.selectValue
           }
         })
         .then(result => {
-          store.numberCard = result.data
+          store.numberCard = result.data.data
         })
       }
     },
