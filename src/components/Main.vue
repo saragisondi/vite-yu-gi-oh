@@ -33,7 +33,7 @@ export default {
     <div class="container">
 
       <div class="found-cards">
-        <div class="text">Found 39 cards</div>
+        <div class="text">Found {{}} cards</div>
       </div>
 
       <Select

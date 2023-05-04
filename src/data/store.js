@@ -4,6 +4,7 @@ export const store = reactive({
   HeaderTitle:'Yu-Gi-Oh Api',
   ApiUrl:'https://db.ygoprodeck.com/api/v7/cardinfo.php',
   cards:[],
+  numberCard:[],
   CardType:[
     'Effect Monster',
     'Flip Effect Monster',
