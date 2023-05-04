@@ -21,5 +21,7 @@ Creare un componente che mostri il numero totale di risultati ottenuti.
 8) Faccio la chiamata Api per stampare le cards;
 9) Creo un componente Select;
 10) Aggiungo un array con i tipi delle cards;
-11)
+11) Faccio una funzione al click per cambiare il valore del type;
+12) Collego la funzione alla chiamata Api e al tasto della select;
+13) Resetto il tasto;
 

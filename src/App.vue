@@ -23,7 +23,8 @@ import {store} from './data/store';
         axios.get(store.ApiUrl,{
           params:{
             num:10,
-            offset:0
+            offset:0,
+            type: store.selectValue
           }
         })
         .then(result => {
@@ -35,13 +36,15 @@ import {store} from './data/store';
 
     mounted(){
       this.getApi()
+      
     }
   }
 </script>
 
 <template>
   <Header />
-  <Main />
+  <Main 
+  @callApi="getApi"/>
 </template>
 
 

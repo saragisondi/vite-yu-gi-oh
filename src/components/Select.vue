@@ -1,5 +1,5 @@
 <script>
-import {store} from '../data/store';
+import {store} from '../data/store.js';
 export default {
   name:'Select',
   data(){
@@ -18,7 +18,7 @@ export default {
 
 <template>
   <select name="type" id="type">
-    <option value="Seleziona Tipo">Seleziona Tipo</option>
+    <option @click="selectFunction(null)">Seleziona Tipo</option>
     <option 
     v-for="(type) in store.CardType"
     :key="type"

@@ -15,6 +15,12 @@ export default {
     return{
       store,
     }
+  },
+
+  methods:{
+    callApi(){
+      this.$emit('callApi')
+    }
   }
 }
 </script>
@@ -30,7 +36,9 @@ export default {
         <div class="text">Found 39 cards</div>
       </div>
 
-      <Select/>
+      <Select
+      @changeValue="callApi"
+      />
       <ContainerCards/>
 
     </div>

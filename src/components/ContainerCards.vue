@@ -1,6 +1,7 @@
 <script>
 import Card from '../components/Card.vue'
-import { store } from '../data/store';
+import { store } from '../data/store'
+
 export default {
   name:'ContainerCards',
   components:{
@@ -24,6 +25,7 @@ export default {
     :img="card.card_images[0].image_url"
     :name="card.name"
     :type="card.type"
+
     />
 
   </div>
