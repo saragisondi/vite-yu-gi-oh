@@ -22,7 +22,7 @@ import {store} from './data/store';
       getApi(){
         axios.get(store.ApiUrl,{
           params:{
-            num:10,
+            num:20,
             offset:0,
             type: store.selectValue
           }
