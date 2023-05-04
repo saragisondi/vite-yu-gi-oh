@@ -17,7 +17,7 @@ export default {
     v-for="(type) in store.CardType"
     :key="type"
     :value="type"
-    >
+    >{{ type }}
 
   </option>
   </select>
