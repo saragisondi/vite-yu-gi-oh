@@ -29,7 +29,8 @@ import {store} from './data/store';
         .then(result => {
           store.cards = result.data.data;
         })
-      }
+      },
+      
     },
 
     mounted(){

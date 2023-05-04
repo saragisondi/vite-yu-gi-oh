@@ -30,7 +30,7 @@ export default {
 
 .card{
       width: calc(90% /5);
-      height:500px;   
+      height:600px;   
       margin-bottom:30px;
       background-color: $primary-color;
       

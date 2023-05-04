@@ -17,10 +17,6 @@ export default {
 
 <template>
 
-  <select name="type" id="type">
-    <option value="Alien">Alien</option>
-  </select>
-
   <main>
 
 
