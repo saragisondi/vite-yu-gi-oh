@@ -32,5 +32,6 @@ export const store = reactive({
     'Union Effect Monster',
     'XYZ Monster',
     'XYZ Pendulum Effect Monster',
-  ]
+  ],
+  selectValue:null
 })

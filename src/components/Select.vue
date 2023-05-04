@@ -6,6 +6,12 @@ export default {
     return{
       store
     }
+  },
+  methods:{
+    selectFunction(type){
+      store.selectValue = type
+      this.$emit('changeValue')
+    }
   }
 }
 </script>
@@ -17,6 +23,7 @@ export default {
     v-for="(type) in store.CardType"
     :key="type"
     :value="type"
+    @click="selectFunction(type)"
     >{{ type }}
 
   </option>
